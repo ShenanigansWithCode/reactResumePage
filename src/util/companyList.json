@@ -1,0 +1,197 @@
+[ {
+        "formattedName": "Biocodex",
+        "location": {
+            "city": "Redwood Shores",
+            "state": "CA"
+        },
+        "startDate": {
+            "month": 6,
+            "year": 2018
+        },
+        "endDate": {
+            "month": 12,
+            "year": 2019
+        },        
+        "responsibilities": [
+            {
+                "description":"Interfaces with a diverse cross functional team to develop and automate forecasting and analytical models to determine conversions and ROI",
+                "priority": 10
+            },
+            {
+                "description": "Reduced reporting turnaround by 700% through ETL pipeline automation",
+                "priority": 9
+            },
+            {
+                "description": "Designed and implemented an automated data transformation process, relational database and dynamic dashboard to provide critical insights into Amazon eCommerce business",
+                "priority": 8
+            },
+            {
+                "description": "Received the highest performance review for US division",
+                "priority": 7
+            }
+        ],
+        "title": "Sales Analyst",
+        "id": 1,
+        "percentProgramming" : 70,
+        "languages" : [
+            {
+                "name":"Python",
+                "useage" : 0.75,
+                "id":1
+            },
+            {
+                "name":"SQL",
+                "useage": 0.15,
+                "id":2
+            },
+            {
+                "name":"SOQL",
+                "useage": 0.10,
+                "id":3
+            }
+        ],
+        "technologies" : [
+            {
+                "name":"Tableau",
+                "useage" : 0.60,
+                "id":1
+            },
+            {
+                "name":"Salesforce",
+                "useage" : 0.30,
+                "id":2
+            },
+            {
+                "name":"Excel",
+                "useage" : 0.10,
+                "id":3
+            }
+        ]
+    },
+{
+        "formattedName": "Armature Systems",
+        "location": {
+            "city": "Santa Clara",
+            "state": "CA"
+        },
+        "startDate": {
+            "month": 3,
+            "year": 2017
+        },
+        "endDate": {
+            "month": 6,
+            "year": 2018
+        },        
+        "responsibilities": [
+            {
+                "description":"Improved sales velocity by over 50% and reduced manual data entry by 65% through automation of sales processes",
+                "priority": 10
+            },
+            {
+                "description": "Simplified and increased accuracy of quoting process by building and deploying custom external quote pdf server",
+                "priority": 9
+            },
+            {
+                "description": "Reduced technical debt and improved efficiency through migration from Legacy Salesforce Classic to new Salesforce Lightning Platform",
+                "priority": 8
+            }
+        ],
+        "title": "Salesforce Administrator",
+        "id": 2,
+        "percentProgramming" : 40,
+        "languages" : [
+            {
+                "name":"JavaScript", 
+                "useage": 0.40,
+                "id":1
+            },
+            {
+                "name": "Apex",
+                "useage": 0.30,
+                "id":2
+            },         
+            {
+                "name":"SOQL",
+                "useage": 0.17,
+                "id":3
+            },
+            {
+                "name":"SQL",
+                "useage": 0.13,
+                "id":4
+            },
+            {
+                "name":"HTML",
+                "useage": 0.10,
+                "id":5
+            }               
+        ],
+        "technologies" : [
+            {
+                "name":"Salesforce",
+                "useage" : 0.70,
+                "id":1
+            },
+            {
+                "name":"Excel",
+                "useage" : 0.20,
+                "id":2
+            },
+            {
+                "name":"Mavenslink",
+                "useage" : 0.10,
+                "id":3
+            }
+        ]      
+    },
+ {
+        "formattedName": "Jfrog",
+        "location": {
+            "city": "Santa Clara",
+            "state": "CA"
+        },
+        "startDate": {
+            "month": 9,
+            "year": 2016
+        },
+        "endDate": {
+            "month": 2,
+            "year": 2017
+        },        
+        "responsibilities": [
+            {
+                "description":"Improved ARR through persistent, methodical, process audits for efficiency and consistency with singular focus on enhancing the customer experience and acceleration of sales velocity",
+                "priority": 10
+            },
+            {
+                "description": "Built customer trust through timely response and resolution of escalations regarding licensing, billing and technical support",
+                "priority": 9
+            },
+            {
+                "description": "Coordinated key stakeholders to determine company needs, eliminate redundancy and provide deliverables",
+                "priority": 8
+            }
+        ],    
+        "title": "Sales Operations",
+        "id":3,
+        "percentProgramming" : 0,
+        "languages" : [],
+        "technologies" : [
+            {
+                "name":"Salesforce",
+                "useage" : 0.80,
+                "id":1
+            },
+            {
+                "name":"Excel",
+                "useage" : 0.10,
+                "id":2
+            },
+            {
+                "name":"Zoura",
+                "useage" : 0.10,
+                "id":2                
+            }           
+        ]
+    }
+]

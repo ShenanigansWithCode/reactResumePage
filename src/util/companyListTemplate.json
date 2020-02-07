@@ -1,0 +1,50 @@
+{    "name" : {
+        "formattedName": "",
+        "location": {
+            "city": "",
+            "state": ""
+        },
+        "startDate": {
+            "month": 1,
+            "year": 2019
+        },
+        "endDate": {
+            "month": 1,
+            "year": 2020
+        },    
+        "responsibilities": [
+            {
+                "description":"",
+                "priority": 10
+            },
+            {
+                "description": "",
+                "priority": 9
+            },
+            {
+                "description": "",
+                "priority": 8
+            },
+            {
+                "description": "",
+                "priority": 7
+            }
+        ],
+        "title" : "",
+        "id": 1,
+        "languages" : [
+            {
+                "name":"",
+                "useage" : 0.00,
+                "id":1
+            }
+        ],
+        "Technologies" : [
+            {
+                "name":"",
+                "useage" : 0.00,
+                "id":1
+            }
+        ]
+    }
+}
