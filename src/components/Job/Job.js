@@ -78,15 +78,14 @@ class Job extends React.Component {
         return (
             <div className="job-block">
                 <div className={"job-header-box"}>
-                    <h2 className="job-header">{job.formattedName} | {job.title} | {job.location.city}, {job.location.state} </h2> 
+                    <h2 className="job-header">{job.formattedName} | <em>{job.title}</em> | {job.location.city}, {job.location.state} </h2> 
                     <h2 className="job-header date">{job.startDate.month}/{job.startDate.year} - {job.endDate.month}/{job.endDate.year} </h2>
                 </div>
-
-                <div style={barbox}>
+                {/* <div style={barbox}>
                     {this.renderProgrammingJobs(job.languages, job)}
                     {this.renderDividerBar(job.languages, job.technologies)}
                     {this.renderTechnologies(job.technologies, job)}
-                </div>
+                </div> */}
                 <ResponsibilityList responsibilities={job.responsibilities}/>
             </div>
         )

@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import JobList from '../JobList/JobList';
+import ProfilePic from './ProfilePic2.jpg';
+import BackgroundPic from './backgroundPic.jpeg'
 let companyList = require('../../util/companyList.json');
 
 class App extends React.Component {
@@ -15,24 +17,22 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:500&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"/>
         <div>
           <div className={"sidenav"}>
+            <img src={ProfilePic} alt={'cat'} id={'catpic'}/>
             <ul>
+              <li classname={"sublink"} href="#">Resume</li>
               <li classname={"sublink"} href="#">Projects</li>
               <li classname={"sublink"} href="#">References</li>
-              <li classname={"sublink"} href="#">Clients</li>
               <li classname={"sublink"} href="#">Contact</li>
             </ul>
           </div>
           <div className={"main"}>
             <div className={"buffer"}></div>
-            <img src={'https://www.geek.com/wp-content/uploads/2015/12/kittyconvict-625x350.jpg'} alt={'cat'} id={'catpic'}/>
-            <div className={"buffer"}></div>
             <div>
               <JobList className="Job-List" jobInfo={this.state.jobs}/>
             </div>
-            <img src={'https://www.geek.com/wp-content/uploads/2015/12/kittyconvict-625x350.jpg'} alt={'cat'} id={'catpic'}/>
           </div>
         </div>
 

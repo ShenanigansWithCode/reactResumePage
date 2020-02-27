@@ -1,10 +1,11 @@
 ul.responsibility-list {
     color: black;
-    font-weight: bold;
     list-style-type: square;
-    list-style-position: inside;
-    background-color: rgba(255, 255, 255, 60%);
-    padding: 2%;
-    border: 2px solid black;
-    border-radius: 20px;
+    list-style-position: outside;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: calc(2px + 2vmin);
+    font-family: 'Work Sans', sans-serif;
+    border: 0;
+    margin: 0;
 }

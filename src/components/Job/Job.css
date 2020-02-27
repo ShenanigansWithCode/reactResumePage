@@ -13,9 +13,8 @@
 .job-header {
     border-bottom: 2px outset  black;
     align-items: left;
-    font-size: calc(10px + 2vmin);
-    font-family: 'Roboto Slab', serif;
-    /* background-color: rgba(224,224,224,60%); */
+    font-size: calc(6px + 2vmin);
+    font-family: 'Work Sans', sans-serif;
     text-shadow:
         -1px -1px 0  rgba(224,224,224,15%),
         1px -1px 0  rgba(224,224,224,15%),
