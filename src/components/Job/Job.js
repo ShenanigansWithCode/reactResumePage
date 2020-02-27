@@ -66,15 +66,15 @@ class Job extends React.Component {
         console.log(`lwidth: ${lWidth}, rWidth: ${rWidth}`)
         var gridWidthValues = `${lWidth}% ${mWidth}% ${rWidth}%`;
         console.log(gridWidthValues)
-        const barbox = {
-            "display": "grid",
-            "grid-template-columns": gridWidthValues,
-            "width": "100%",
-            "align-items": "top",
-            "justify-content": "stretch",
-            "font-size": 6,
-            "font-family": "Roboto Slab, serif"
-          }
+        // const barbox = {
+        //     "display": "grid",
+        //     "grid-template-columns": gridWidthValues,
+        //     "width": "100%",
+        //     "align-items": "top",
+        //     "justify-content": "stretch",
+        //     "font-size": 6,
+        //     "font-family": "Roboto Slab, serif"
+        //   }
         return (
             <div className="job-block">
                 <div className={"job-header-box"}>

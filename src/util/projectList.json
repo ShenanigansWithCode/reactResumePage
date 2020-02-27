@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Custom Quote Server",
+        "catagory": "Business",
+        "dateDeployed": "4/2018",
+        "need": "Qouting was slow, and manual. Stake holder approval was informal and inconsistantly documented. Quotes were unorganized and difficult for customers to read.",
+        "description": "Custom quoting app built on the Salesforce Lightning platform which integrates with Salesforce Sales Cloud and Krow PSA. Sales rep submits a quote request with validated imput feilds and documentation. Appropriate Salesforce object records are created, populated and moved to the appropriate process stage. Apex logic and approval rules determine if additional documentation or approval are needed and notifies the appropriate parties. Quotes are scheduled in a scrum based on quote urgency, timing and priority rules. Once all requirements are in place, a custom quote pdf is generated with all requested product groupings, discounts, custom descriptions and contract language added. A demo quote is generated in a headless chrome window produced by heroku. Upon approval, an email with completed quote is e-mailed to the appropriate sales rep.",
+        "outcome": "Simplified and increased accuracy of quoting process by building and deploying custom external quote pdf server",
+        "technologiesUsed" : [
+            "Apex",
+            "Lightning Platform",
+            "Heroku",
+            "Express",
+            "Javascript",
+            "SOQL"
+        ]
+    },
+    {
+        "name": "Stock Checker",
+        "catagory": "Business",
+        "dateDeployed": "2/2018",
+        "need": "Required a way to easily check if 1,000 items are in our product catalogue",
+        "description": "User copies and pastes a list of product ID's into an Lighnting App anchored to the Salesforce Sales console. The app will then display a list of items not found in the product catalogue.",
+        "outcome": "Decreased quote turn around time by up to 70%",
+        "technologiesUsed": [
+            "Apex",
+            "Lightning Platform",
+            "Javascript",
+            "SOQL"
+        ]
+    },
+    {
+        "name": "Questland - Guild Member Performance Metric Scraper",
+        "catagory": "Personal",
+        "dateDeployed": "10/2018",
+        "need": "Manual entry of member performance was time intensive competely manual, taked from screenshots.",
+        "description": "Data scraper which uses multiple screenshots to parse performance metrics into a CSV spreadsheet.",
+        "outcome": "Performance metric turn around reduced by 60%",
+        "technologiesUsed": [
+            "Python",
+            "Google Cloud API"
+        ]
+    },
+    {
+        "name": "Amazon - AWS Metric Database, Data Shaping and Tableau Online Dashboard Integration",
+        "catagory": "Business",
+        "dateDeployed": "10/2019",
+        "need": "Accurate and efficent analysis of Amazon business performance using manually obtained metric reports from 14 seperate sources.",
+        "description": "Weekly, 14 report metrics are downloaded to a box folder. Reports are catagorized, validated, filed, reshaped and combined into an AWS MYSQL Server. Data is then integrated with a Tableau Online Dashboard. Dashboard dynamically analizes performance indecators and displayes key indicators.",
+        "outcome": "Amazon metrics are organized and displayed in an easy and relevant way for key stake holders.",
+        "technologiesUsed": [
+            "Python",
+            "MySQL",
+            "SQL",
+            "AWS"
+        ]
+    }
+]
