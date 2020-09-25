@@ -7,43 +7,41 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const Resume = lazy(() => import('../App/Pages/Resume'));
 const Projects = lazy(() => import('../App/Pages/Projects.js'));
-
-let companyList = require('../util/companyList.json');
-let projectListJson = require('../util/projectList.json');
-
+const References = lazy(() => import('../App/Pages/References.js'));
+const Contact = lazy(() => import('../App/Pages/Contact.js'));
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      jobs: companyList,
-      projects: projectListJson,
       currentPage: 'home'
     };
 
   }
   render() {
     return (
-      <Container>
-        <Row>
+      <Router>
+        <Container fluid>
+          <Row style={{paddingTop: '71px'}}>
+              <Col>
+              <Navbar/>
+              </Col>
+          </Row>
+          <Row>
             <Col>
-            <Navbar/>
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Switch>
+                    <Route exact path="/" component={Resume}/>
+                    <Route path="/resume" component={Resume}/>
+                    <Route path="/projects" component={Projects}/>
+                    <Route path="/references" component={References}/>
+                    <Route path="/contact" component={Contact}/>
+                  </Switch>
+                </Suspense>
             </Col>
-        </Row>
-        <Row>
-          <Col>
-            <span style={{height: "56px"}}/>
-            <Router>
-              <Suspense fallback={<div>Loading...</div>}>
-                <Switch>
-                  <Route exact path="/" component={Resume}/>
-                  <Route path="/projects" component={Projects}/>
-                </Switch>
-              </Suspense>
-            </Router>
-          </Col>
-        </Row>   
-      </Container>
+          </Row>   
+        </Container>
+      </Router>
     );
   }  
 }
