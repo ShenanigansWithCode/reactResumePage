@@ -1,19 +1,16 @@
 import React from 'react';
-import Responsibility from '../Responsibility/Responsibility';
-import './ResponsibilityList.css'
+import Responsibility from './Responsibility/Responsibility';
 
-class ResponsibilityList extends React.Component {
-    render() {
-        return (
-            <ul className={"responsibility-list"}>
-                {
-                    this.props.responsibilities.map(resp => {
-                        return <Responsibility resp={resp} key={resp.priority} />
-                    })
-                }
-            </ul>  
-        )
-    }
+function ResponsibilityList(props) {
+    return (
+        <ul className={"card-list"}>
+            {
+                props.responsibilities.map(resp => {
+                    return <Responsibility resp={resp} key={resp.priority} />
+                })
+            }
+        </ul>  
+    )
 }
 
 export default ResponsibilityList;

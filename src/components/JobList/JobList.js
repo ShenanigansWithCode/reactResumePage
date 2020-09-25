@@ -1,17 +1,18 @@
 import React from 'react';
 import './JobList.css';
+import Job from './Job/Job';
+import {CardColumns} from 'react-bootstrap';
 
-import Job from '../Job/Job';
 
 class JobList extends React.Component {
 
     render() {
         return (
-            <div className="job-list">
+            <CardColumns>
                 {this.props.jobInfo.map(job => {
                     return <Job job={job} key={job.id}/>
                 })}
-            </div>
+            </CardColumns>
         )
     }
 }

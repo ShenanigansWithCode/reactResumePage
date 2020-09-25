@@ -1,0 +1,39 @@
+.card-columns {
+    column-count: 1 !important;
+}
+.card-title {
+    border-bottom: 1px solid black;
+    padding: 0px !important;
+}
+div.no-padding.col,
+div.justify-content-end.date {
+    padding-right: 0px; 
+    padding-left: 0px;
+}
+ul.card-list {
+    color: black;
+    list-style-type: square;
+    list-style-position: outside;
+    padding-left: 15px;
+    padding-right: 0px;
+    font-size: calc(2px + 2vmin);
+    font-family: 'Work Sans', sans-serif;
+    border: 0;
+    margin: 0;
+}
+li.card-list,
+.add-row-spacing {
+    margin: 1em 0;
+}
+.h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: .9rem !important;
+}
+.date {
+    align-items: right;
+    text-align: right;
+}
+.no-padding {
+    padding-right: 0px; 
+    padding-left: 0px;
+}
