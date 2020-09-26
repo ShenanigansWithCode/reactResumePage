@@ -4,7 +4,11 @@ let companyList = require('../../util/companyList.json');
 
 function Resume(props) {
     return (
-        <JobList className="Job-List" jobInfo={companyList}/>
+        <JobList 
+            className="Job-List" 
+            jobInfo={companyList}
+            renderTechnologies={props.renderTechnologies}        
+        />
     )
 }
 

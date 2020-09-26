@@ -6,6 +6,7 @@
     padding: 0px !important;
 }
 div.no-padding.col,
+div.no-padding.col-md-2,
 div.justify-content-end.date {
     padding-right: 0px; 
     padding-left: 0px;
@@ -36,4 +37,7 @@ li.card-list,
 .no-padding {
     padding-right: 0px; 
     padding-left: 0px;
+}
+body {
+    font-size: .8rem !important;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import './Project.css';
 import {Card, Row, Col, Container} from 'react-bootstrap';
+
 function Project(props) {
     const {project} = props;
     return (
@@ -18,30 +18,32 @@ function Project(props) {
                 </Card.Title>
                 <Card.Text>
                     <Container fluid>
-                        <Row className="add-row-spacing">
-                            <Col md="3">
-                                <em>Need:</em>
+                        <Row className="add-row-spacing no-padding">
+                            <Col md="3" className="no-padding">
+                                <b><em>Need:</em></b>
                             </Col>
-                            <Col>
+                            <Col className="no-padding">
                                 {project.need}
                             </Col>
                         </Row>
-                        <Row className="add-row-spacing">
-                            <Col md="3">
-                                <em>Description:</em>
+                        <Row className="add-row-spacing no-padding">
+                            <Col md="3" className="no-padding">
+                                <b><em>Description:</em></b>
                             </Col>
-                            <Col>
+                            <Col className="no-padding">
                                 {project.description}
                             </Col>
                         </Row>
-                        <Row className="add-row-spacing">
-                            <Col md="3">
-                                <em>Outcome:</em>
+                        <Row className="add-row-spacing no-padding">
+                            <Col md="3" className="no-padding">
+                                <b><em>Outcome:</em></b>
                             </Col>
-                            <Col>
-                                {project.Outcome}
+                            <Col className="no-padding">
+                                {project.outcome}
                             </Col>
                         </Row>
+                        {props.renderTechnologies(project.languages, 'Stack', "3")}
+                        {props.renderTechnologies(project.platform, 'Platform', "3")}
                     </Container>
                 </Card.Text>
 

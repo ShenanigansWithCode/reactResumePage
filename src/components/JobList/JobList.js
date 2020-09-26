@@ -4,17 +4,19 @@ import Job from './Job/Job';
 import {CardColumns} from 'react-bootstrap';
 
 
-class JobList extends React.Component {
-
-    render() {
-        return (
-            <CardColumns>
-                {this.props.jobInfo.map(job => {
-                    return <Job job={job} key={job.id}/>
-                })}
-            </CardColumns>
-        )
-    }
+function JobList(props) {
+    return (
+        <CardColumns>
+            {props.jobInfo.map(job => {
+                return <Job 
+                            job={job} 
+                            key={job.id}
+                            renderTechnologies={props.renderTechnologies}    
+                        />
+            })}
+        </CardColumns>
+    )
 }
+
 
 export default JobList;

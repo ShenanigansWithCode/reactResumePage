@@ -3,10 +3,8 @@ import ResponsibilityList from '../../ResponsibilityList/ResponsibilityList';
 import {Card, Row, Col, Container} from 'react-bootstrap';
 
 function Job(props) {
-
     const {job} = props;
     return (
-
         <Card>
             <Card.Body>
                 <Card.Title>
@@ -23,6 +21,11 @@ function Job(props) {
                 </Card.Title>
                 <Card.Text className="no-padding"> 
                     <ResponsibilityList responsibilities={job.responsibilities}/>
+                    <Container fluid>
+                        <br/>
+                        {props.renderTechnologies(job.languages, 'Stack')}
+                        {props.renderTechnologies(job.technologies, 'Technologies')}
+                    </Container>
                 </Card.Text>
             </Card.Body>
         </Card>

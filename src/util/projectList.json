@@ -10,13 +10,44 @@
         "need": "Quoting was slow, and manual. Stake holder approval was informal and inconsistently documented. Quotes were unorganized and difficult for customers to read.",
         "description": "Custom quoting app built on the Salesforce Lightning platform which integrates with Salesforce Sales Cloud and Krow PSA. Sales rep submits a quote request with validated input fields and documentation. Appropriate Salesforce object records are created, populated and moved to the appropriate process stage. Apex logic and approval rules determine if additional documentation or approval are needed and notifies the appropriate parties. Quotes are scheduled in a scrum based on quote urgency, timing and priority rules. Once all requirements are in place, a custom quote pdf is generated with all requested product groupings, discounts, custom descriptions and contract language added. A demo quote is generated in a headless chrome window produced by Heroku. Upon approval, an email with completed quote is e-mailed to the appropriate sales rep.",
         "outcome": "Simplified and increased accuracy of quoting process by building and deploying custom external quote pdf server",
-        "technologiesUsed": [
-            "Apex",
-            "Lightning Platform",
-            "Heroku",
-            "Express",
-            "JavaScript",
-            "SOQL"
+        "languages": [
+            {
+                "name": "Apex", 
+                "usage": 0.40,
+                "id":1
+            },
+            {
+                "name": "Lightning", 
+                "usage": 0.40,
+                "id":2
+            },
+            {
+                "name": "Express", 
+                "usage": 0.40,
+                "id":3
+            },
+            {
+                "name": "JavaScript", 
+                "usage": 0.40,
+                "id":4
+            },
+            {
+                "name": "SOQL", 
+                "usage": 0.40,
+                "id":5
+            }
+        ],
+        "platform": [
+            {
+                "name": "Salesforce", 
+                "usage": 0.90,
+                "id":1
+            },
+            {
+                "name": "Heroku", 
+                "usage": 0.10,
+                "id":2
+            }
         ]
     },
     {
@@ -30,11 +61,34 @@
         "need": "Required a way to easily check if 1,000 items are in our product catalogue",
         "description": "User copies and pastes a list of product ID's into a Lightning App anchored to the Salesforce Sales console. The app will then display a list of items not found in the product catalogue.",
         "outcome": "Decreased quote turnaround time by up to 70%",
-        "technologiesUsed": [
-            "Apex",
-            "Lightning Platform",
-            "JavaScript",
-            "SOQL"
+        "languages": [
+            {
+                "name": "Apex", 
+                "usage": 0.40,
+                "id":1
+            },
+            {
+                "name": "JavaScript", 
+                "usage": 0.40,
+                "id":2
+            },
+            {
+                "name": "Lightning", 
+                "usage": 0.40,
+                "id":3
+            },
+            {
+                "name": "SOQL", 
+                "usage": 0.40,
+                "id":4
+            }
+        ],
+        "platform" : [
+            {
+                "name": "Salesforce", 
+                "usage": 1.0,
+                "id":1
+            }
         ]
     },
     {
@@ -48,9 +102,19 @@
         "need": "Manual entry of member performance was time intensive completely manual, taken from screenshots.",
         "description": "Data scraper which uses multiple screenshots to parse performance metrics into a CSV spreadsheet.",
         "outcome": "Performance metric turn around reduced by 60%",
-        "technologiesUsed": [
-            "Python",
-            "Google Cloud API"
+        "languages": [
+            {
+                "name": "Python", 
+                "usage": 1.0,
+                "id":1
+            }
+        ],
+        "platform": [
+            {
+                "name": "Google Cloud API", 
+                "usage": 1.0,
+                "id":1
+            }
         ]
     },
     {
@@ -64,11 +128,24 @@
         "need": "Accurate and efficient analysis of Amazon business performance using manually obtained metric reports from 14 separate sources.",
         "description": "Weekly, 14 report metrics are downloaded to a box folder. Reports are categorized, validated, filed, reshaped and combined into an AWS MYSQL Server. Data is then integrated with a Tableau Online Dashboard. Dashboard dynamically analyzes performance indicators and displays key indicators.",
         "outcome": "Amazon metrics are organized and displayed in an easy and relevant way for key stake holders.",
-        "technologiesUsed": [
-            "Python",
-            "MySQL",
-            "SQL",
-            "AWS"
+        "languages": [
+            {
+                "name": "Python", 
+                "usage": 0.8,
+                "id":1
+            },
+            {
+                "name": "MySQL", 
+                "usage": 0.2,
+                "id":2
+            }
+        ],
+        "platform": [
+            {
+                "name": "AWS", 
+                "usage": 1.0,
+                "id":1
+            }
         ]
     }
 ]
