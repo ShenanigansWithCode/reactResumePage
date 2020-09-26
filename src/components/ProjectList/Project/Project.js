@@ -19,7 +19,7 @@ function Project(props) {
                 <Card.Text>
                     <Container fluid>
                         <Row className="add-row-spacing no-padding">
-                            <Col md="3" className="no-padding">
+                            <Col md="2" className="no-padding">
                                 <b><em>Need:</em></b>
                             </Col>
                             <Col className="no-padding">
@@ -27,7 +27,7 @@ function Project(props) {
                             </Col>
                         </Row>
                         <Row className="add-row-spacing no-padding">
-                            <Col md="3" className="no-padding">
+                            <Col md="2" className="no-padding">
                                 <b><em>Description:</em></b>
                             </Col>
                             <Col className="no-padding">
@@ -35,15 +35,15 @@ function Project(props) {
                             </Col>
                         </Row>
                         <Row className="add-row-spacing no-padding">
-                            <Col md="3" className="no-padding">
+                            <Col md="2" className="no-padding">
                                 <b><em>Outcome:</em></b>
                             </Col>
                             <Col className="no-padding">
                                 {project.outcome}
                             </Col>
                         </Row>
-                        {props.renderTechnologies(project.languages, 'Stack', "3")}
-                        {props.renderTechnologies(project.platform, 'Platform', "3")}
+                        {props.renderTechnologies(project.languages, 'Stack', "2")}
+                        {props.renderTechnologies(project.platform, 'Platform', "2")}
                     </Container>
                 </Card.Text>
 
